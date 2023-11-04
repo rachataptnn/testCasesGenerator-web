@@ -67,6 +67,13 @@
       font-size: 11px;
       margin-left: 600px;
     }
+    .container {
+      display: flex;
+    }
+
+    .problem-set {
+      margin-right: 40px;
+    }
 </style>
 <script lang="ts">
   let url = '';
@@ -112,38 +119,45 @@
 </script>
   
   <h1>Test cases Generator</h1>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;this is a little helping tool in case someone wanna make some go testing script but... it's not support array type yet</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;this is a little helping tool in case of someone wanna make some go testing script but... it's not support array type yet</p>
   <p class="smallp">(actualy it's not support many)（＊´ω｀）ゞ</p>
   
   
+  <div class="container">
+    <div class="problem-set">
+      <p class="someprb">some problems that work fine</p>
+      <div>
+        <a href="https://leetcode.com/problems/palindrome-number/" target="_blank">Palindrom</a>
+        &nbsp;<img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/palindrome-number/")} alt="Click to Copy URL">
+      </div>
+      <div>
+        <a href="https://leetcode.com/problems/guess-number-higher-or-lower/" target="_blank">guess-number-higher-or-lower</a>
+        &nbsp;<img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/guess-number-higher-or-lower/")} alt="Click to Copy URL">
+      </div>
+    </div>
   
-  <h4>some problems that work fine</h4>
-  <div>
-    <a href="https://leetcode.com/problems/palindrome-number/" target="_blank">Palindrom</a>
-    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/palindrome-number/")} alt="Click to Copy URL">
-  </div>
-  <div>
-    <a href="https://leetcode.com/problems/guess-number-higher-or-lower/" target="_blank">guess-number-higher-or-lower</a>
-    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/guess-number-higher-or-lower/")} alt="Click to Copy URL">
-  </div>
-  <div>
-    <a href="https://leetcode.com/problems/two-sum/" target="_blank">two-sum (not support array ;-;)</a>
-    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/two-sum/")} alt="Click to Copy URL">
-  </div>
-  <div>
-    <a href="https://leetcode.com/problems/roman-to-integer/" target="_blank">roman-to-integer (not support this problem too)</a>
-    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/roman-to-integer/")} alt="Click to Copy URL">
+    <div class="problem-set">
+      <p class="someprb">some problems that have some problem</p>
+      <div>
+        <a href="https://leetcode.com/problems/two-sum/" target="_blank">two-sum (not support array ;-;)</a>
+        &nbsp;<img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/two-sum/")} alt="Click to Copy URL">
+      </div>
+      <div>
+        <a href="https://leetcode.com/problems/roman-to-integer/" target="_blank">roman-to-integer (not support this problem too)</a>
+        &nbsp;<img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/roman-to-integer/")} alt="Click to Copy URL">
+      </div>
+    </div>
   </div>
 
-  <br/>
-  <br/>
+  <br/><br/>
   <form on:submit={handleSubmit}>
-    <label for="urlInput">URL:</label>  
+    <label for="urlInput">URL:</label>
+    <p>&nbsp;&nbsp;How??&nbsp;&nbsp;&nbsp;&nbsp;1.copy url&nbsp;&nbsp;2.paste&nbsp;&nbsp;3.submit</p>  
     <input type="text" id="urlInput" bind:value={url} placeholder="Enter URL" />
     <button type="submit" disabled={isLoading}>Submit</button>
   </form>
   
-  <br/>
+  <br/><br/>
   <label for="urlInput">Result</label>
   <p>&nbsp;&nbsp;in term of response is quite slow just ignore it and do not wait :DD</p>
   <div id="editor-container">
