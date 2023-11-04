@@ -120,19 +120,19 @@
   <h4>some problems that work fine</h4>
   <div>
     <a href="https://leetcode.com/problems/palindrome-number/" target="_blank">Palindrom</a>
-    <img src="./copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/palindrome-number/")} alt="Click to Copy URL">
+    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/palindrome-number/")} alt="Click to Copy URL">
   </div>
   <div>
     <a href="https://leetcode.com/problems/guess-number-higher-or-lower/" target="_blank">guess-number-higher-or-lower</a>
-    <img src="./copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/guess-number-higher-or-lower/")} alt="Click to Copy URL">
+    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/guess-number-higher-or-lower/")} alt="Click to Copy URL">
   </div>
   <div>
     <a href="https://leetcode.com/problems/two-sum/" target="_blank">two-sum (not support array ;-;)</a>
-    <img src="./copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/two-sum/")} alt="Click to Copy URL">
+    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/two-sum/")} alt="Click to Copy URL">
   </div>
   <div>
     <a href="https://leetcode.com/problems/roman-to-integer/" target="_blank">roman-to-integer (not support this problem too)</a>
-    <img src="./copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/roman-to-integer/")} alt="Click to Copy URL">
+    <img src="/copy.png" on:click={() => copyTextToClipboard("https://leetcode.com/problems/roman-to-integer/")} alt="Click to Copy URL">
   </div>
 
   <br/>
