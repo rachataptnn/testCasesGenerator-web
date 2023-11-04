@@ -74,6 +74,9 @@
     .problem-set {
       margin-right: 40px;
     }
+    img:hover {
+      cursor: not-allowed;
+    }
 </style>
 <script lang="ts">
   let url = '';
